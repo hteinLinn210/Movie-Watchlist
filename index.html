@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <!-- Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+         rel="stylesheet"
+      />
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="css/style.css" />
+
+      <title>Movie Watchlist</title>
+   </head>
+   <body>
+      <header>
+         <div class="black-overlay">
+            <h1>Find your film</h1>
+            <a href="/watchlist.html" class="nav-link">My Watchlist</a>
+         </div>
+      </header>
+      <div class="container">
+         <div class="search-bar">
+            <svg
+               width="20"
+               height="20"
+               viewBox="0 0 20 20"
+               fill="none"
+               xmlns="http://www.w3.org/2000/svg"
+               class="search-icon"
+            >
+               <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8 4C5.79086 4 4 5.79086 4 8C4 10.2091 5.79086 12 8 12C10.2091 12 12 10.2091 12 8C12 5.79086 10.2091 4 8 4ZM2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8C14 9.29583 13.5892 10.4957 12.8907 11.4765L17.7071 16.2929C18.0976 16.6834 18.0976 17.3166 17.7071 17.7071C17.3166 18.0976 16.6834 18.0976 16.2929 17.7071L11.4765 12.8907C10.4957 13.5892 9.29583 14 8 14C4.68629 14 2 11.3137 2 8Z"
+                  fill="#9CA3AF"
+               />
+            </svg>
+
+            <input
+               type="text"
+               name="movie-name"
+               id="movie-name"
+               class="movie-search"
+               placeholder="Search for a movie"
+            />
+
+            <button class="search-btn" id="search-btn">Search</button>
+         </div>
+         <div class="movie-list" id="movie-list">
+            <div class="display-information" id="display-information">
+               <img src="/assets/movie-icon.png" alt="Movie-icon" />
+               <p>Start exploring</p>
+            </div>
+
+            <div class="display-movies" id="display-movies"></div>
+         </div>
+      </div>
+      <script src="index.js"></script>
+   </body>
+</html>
